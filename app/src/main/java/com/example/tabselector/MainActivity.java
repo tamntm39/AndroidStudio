@@ -32,7 +32,7 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
     SearchView timkiem;
     TextView tieude,tieude1,tieude2,tieude3;
     RelativeLayout list, list1,list3;
-    ImageView hd,mck,min,wren,vu,tlink,hd1,mck1,min1,wren1,vu1,tlink1,mienphi1,mienphi2,mienphi3,mienphi4;
+    ImageView hd,mck,min,wren,vu,tlink,chill,chill1,chill2,chill3,chill4,chill5,chon,chon1,chon2,chon3,mienphi1,mienphi2,mienphi3,mienphi4;
 
 
     //Khaibao listview
@@ -93,12 +93,17 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
          //list1
         tieude1=findViewById(R.id.tieude1);
         list1=findViewById(R.id.list1);
-        vu1 = findViewById(R.id.vu1);
-        tlink1 = findViewById(R.id.tlink1);
-        wren1 = findViewById(R.id.wren1);
-        min1 = findViewById(R.id.min1);
-        mck1 = findViewById(R.id.mck1);
-        hd1 = findViewById(R.id.hd1);
+        chill = findViewById(R.id.chill);
+        chill1 = findViewById(R.id.chill1);
+        chill2 = findViewById(R.id.chill2);
+        chill3 = findViewById(R.id.chill3);
+        chill4 = findViewById(R.id.chill4);
+        chill5 = findViewById(R.id.chill5);
+
+        chon = findViewById(R.id.chon);
+        chon1 = findViewById(R.id.chon1);
+        chon2 = findViewById(R.id.chon2);
+        chon3 = findViewById(R.id.chon3);
 
         vu.setImageResource(R.drawable.playlisstvu);
         tlink.setImageResource(R.drawable.tlink);
@@ -107,12 +112,17 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
         mck.setImageResource(R.drawable.playmck);
         hd.setImageResource(R.drawable.hoangdung);
 
-        vu1.setImageResource(R.drawable.playlisstvu);
-        tlink1.setImageResource(R.drawable.tlink);
-        wren1.setImageResource(R.drawable.wren);
-        min1.setImageResource(R.drawable.min);
-        mck1.setImageResource(R.drawable.playmck);
-        hd1.setImageResource(R.drawable.hoangdung);
+        chill.setImageResource(R.drawable.chill);
+        chill1.setImageResource(R.drawable.chill1);
+        chill2.setImageResource(R.drawable.chill2);
+        chill3.setImageResource(R.drawable.chill3);
+        chill4.setImageResource(R.drawable.chill4);
+        chill5.setImageResource(R.drawable.chill5);
+
+        chon.setImageResource(R.drawable.chon);
+        chon1.setImageResource(R.drawable.chon1);
+        chon2.setImageResource(R.drawable.chon2);
+        chon3.setImageResource(R.drawable.chon3);
 
         tieude2=findViewById(R.id.tieude2);
 

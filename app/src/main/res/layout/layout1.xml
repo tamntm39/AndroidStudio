@@ -202,52 +202,52 @@
                 <!--                    android:layout_marginLeft="15dp"-->
                 <!--                    android:layout_marginRight="15dp"/>-->
                 <ImageView
-                    android:id="@+id/vu1"
+                    android:id="@+id/chill"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="15dp"
-                    android:src="@drawable/playlisstvu" />
+                    android:src="@drawable/chill" />
 
 
                 <ImageView
-                    android:id="@+id/tlink1"
+                    android:id="@+id/chill1"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/vu1"
-                    android:src="@drawable/tlink" />
+                    android:layout_toRightOf="@id/chill"
+                    android:src="@drawable/chill1" />
 
                 <ImageView
-                    android:id="@+id/wren1"
+                    android:id="@+id/chill2"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/tlink1"
-                    android:src="@drawable/wren" />
+                    android:layout_toRightOf="@id/chill1"
+                    android:src="@drawable/chill2" />
 
                 <ImageView
-                    android:id="@+id/min1"
+                    android:id="@+id/chill3"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/wren1"
-                    android:src="@drawable/min" />
+                    android:layout_toRightOf="@id/chill2"
+                    android:src="@drawable/chill3" />
 
                 <ImageView
-                    android:id="@+id/mck1"
+                    android:id="@+id/chill4"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/min1"
-                    android:src="@drawable/playmck" />
+                    android:layout_toRightOf="@id/chill3"
+                    android:src="@drawable/chill4" />
 
                 <ImageView
-                    android:id="@+id/hd1"
+                    android:id="@+id/chill5"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@id/mck1"
-                    android:src="@drawable/hoangdung" />
+                    android:layout_toRightOf="@id/chill4"
+                    android:src="@drawable/chill5" />
 
 
 
@@ -269,6 +269,71 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Nội dung cuộn ngang, trong trường hợp này là RelativeLayout -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--                <ImageButton-->
+                <!--                    android:id="@+id/imageButton2"-->
+                <!--                    app:srcCompat="@drawable/buocquamua"-->
+                <!--                    android:layout_width="200dp"-->
+                <!--                    android:layout_height="200dp"-->
+                <!--                    android:layout_marginLeft="15dp"-->
+                <!--                    android:layout_marginRight="15dp"/>-->
+                <ImageView
+                    android:id="@+id/chon"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/chon" />
+
+
+                <ImageView
+                    android:id="@+id/chon1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/chon"
+                    android:src="@drawable/chon1" />
+
+                <ImageView
+                    android:id="@+id/chon2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/chon1"
+                    android:src="@drawable/chon2" />
+
+                <ImageView
+                    android:id="@+id/chon3"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/chon2"
+                    android:src="@drawable/chon3" />
+
+
+
+
+
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
 
 
 </LinearLayout>
