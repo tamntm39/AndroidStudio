@@ -30,6 +30,15 @@ public class HomeActivity extends AppCompatActivity {
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
                 startActivity(intent);
             }
+
+        });
+
+        btnDangKy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, DangKyActivity2.class);
+                startActivity(intent);
+            }
         });
     }
 }
