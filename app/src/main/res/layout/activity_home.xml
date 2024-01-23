@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="270dp"
+        android:src="@drawable/spotify_162_svgrepo_com"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hàng triệu bài hát.
+                      Miễn phí trên Spotify"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivlogo"
+        android:layout_marginTop="32dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:text="Đăng ký miễn phí"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#65D569"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        />
+
+    <Button
+        android:id="@+id/btnLoginApple"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#65D569"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/apple_logo"
+        android:text="Tiếp tục bằng Apple"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDangKy"
+        />
+    <Button
+        android:id="@+id/btnLoginSdt"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#65D569"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_ad_units_24"
+        android:text="Tiếp tục bằng số điện thoại"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginApple"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginSdt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

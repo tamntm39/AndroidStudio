@@ -264,7 +264,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp"
-        android:text="Tuyển tập hàng đầu của bạn"
+        android:text="Lựa chọn của Spotify"
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textSize="24sp"
