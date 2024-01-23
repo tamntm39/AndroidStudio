@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#817777"
-    android:backgroundTint="#7A7575"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="@color/black"
     android:orientation="vertical">
+
 
     <TableRow
         android:layout_width="match_parent"
@@ -54,9 +61,10 @@
     <GridView
         android:id="@+id/gv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="326dp"
         android:layout_marginTop="10dp"
         android:horizontalSpacing="5dp"
+        android:nestedScrollingEnabled="true"
         android:numColumns="2"
         android:verticalSpacing="5dp" />
 
@@ -105,7 +113,6 @@
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:src="@drawable/playlisstvu" />
 
 
@@ -169,43 +176,101 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Nội dung cuộn ngang, trong trường hợp này là RelativeLayout -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--                <ImageButton-->
+                <!--                    android:id="@+id/imageButton2"-->
+                <!--                    app:srcCompat="@drawable/buocquamua"-->
+                <!--                    android:layout_width="200dp"-->
+                <!--                    android:layout_height="200dp"-->
+                <!--                    android:layout_marginLeft="15dp"-->
+                <!--                    android:layout_marginRight="15dp"/>-->
+                <ImageView
+                    android:id="@+id/vu1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/playlisstvu" />
+
+
+                <ImageView
+                    android:id="@+id/tlink1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/vu1"
+                    android:src="@drawable/tlink" />
+
+                <ImageView
+                    android:id="@+id/wren1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/tlink1"
+                    android:src="@drawable/wren" />
+
+                <ImageView
+                    android:id="@+id/min1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/wren1"
+                    android:src="@drawable/min" />
+
+                <ImageView
+                    android:id="@+id/mck1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/min1"
+                    android:src="@drawable/playmck" />
+
+                <ImageView
+                    android:id="@+id/hd1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/mck1"
+                    android:src="@drawable/hoangdung" />
+
+
+
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tieude2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Tuyển tập hàng đầu của bạn"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
 </LinearLayout>
-<!--    <TextView-->
-<!--        android:id="@+id/textView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Nhập A:"-->
-<!--        android:textColor="#009688"-->
-<!--        android:textSize="18sp"-->
-<!--        android:textStyle="bold" />-->
 
-<!--    <EditText-->
-<!--        android:id="@+id/edtA"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:ems="10"-->
-<!--        android:inputType="number" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/textView2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Nhập B:"-->
-<!--        android:textColor="#009688"-->
-<!--        android:textSize="18sp"-->
-<!--        android:textStyle="bold" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/edtB"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:ems="10"-->
-<!--        android:inputType="number" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btntong"-->
-<!--        android:layout_width="196dp"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:text="+"-->
-<!--        android:textSize="20sp" />-->
+</ScrollView>

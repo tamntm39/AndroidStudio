@@ -15,7 +15,6 @@
         android:iconifiedByDefault="false"
         android:layout_marginBottom="20dp"
         android:queryHint="Bạn muốn nghe gì?">
-
     </SearchView>
 
     <TextView

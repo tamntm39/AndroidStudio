@@ -30,9 +30,9 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
     Button btn1,btn2,btn3,btn4,btntong;
     TabHost mytab;
     SearchView timkiem;
-    TextView tieude,tieude1;
-    RelativeLayout list;
-    ImageView hd,mck,min,wren,vu,tlink;
+    TextView tieude,tieude1,tieude2;
+    RelativeLayout list, list1;
+    ImageView hd,mck,min,wren,vu,tlink,hd1,mck1,min1,wren1,vu1,tlink1;
 
 
     //Khaibao listview
@@ -90,6 +90,15 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
          min = findViewById(R.id.min);
          mck = findViewById(R.id.mck);
          hd = findViewById(R.id.hd);
+         //list1
+        tieude1=findViewById(R.id.tieude1);
+        list1=findViewById(R.id.list1);
+        vu1 = findViewById(R.id.vu1);
+        tlink1 = findViewById(R.id.tlink1);
+        wren1 = findViewById(R.id.wren1);
+        min1 = findViewById(R.id.min1);
+        mck1 = findViewById(R.id.mck1);
+        hd1 = findViewById(R.id.hd1);
 
         vu.setImageResource(R.drawable.playlisstvu);
         tlink.setImageResource(R.drawable.tlink);
@@ -98,22 +107,41 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
         mck.setImageResource(R.drawable.playmck);
         hd.setImageResource(R.drawable.hoangdung);
 
+        vu1.setImageResource(R.drawable.playlisstvu);
+        tlink1.setImageResource(R.drawable.tlink);
+        wren1.setImageResource(R.drawable.wren);
+        min1.setImageResource(R.drawable.min);
+        mck1.setImageResource(R.drawable.playmck);
+        hd1.setImageResource(R.drawable.hoangdung);
+
+        tieude2=findViewById(R.id.tieude2);
+
         //vử lí tabhosst
         mytab=findViewById(R.id.mytab);
         mytab.setup();
         //khai báo các tab con(tabSpec)
-        TabHost.TabSpec spec1, spec2;
+        TabHost.TabSpec spec1, spec2, spec3, spec4;
         //ứng với mỗi tab con chúng ta cần thực hiện 4 công việc
         //tab1
         spec1 =mytab.newTabSpec("t1"); // tạo mới tab
         spec1.setContent(R.id.tab1); // tham chiếu id của tab1
-        spec1.setIndicator("",getResources().getDrawable(R.drawable.baseline_home_24)); // thiết lập icon cho tab
+        spec1.setIndicator("",getResources().getDrawable(R.drawable.home_svgrepo_com__1_)); // thiết lập icon cho tab
         mytab.addTab(spec1); //thêm tab 1 vài tab chính
         //tab2
         spec2 =mytab.newTabSpec("t2"); // tạo mới tab
         spec2.setContent(R.id.tab2); // tham chiếu id của tab1
-        spec2.setIndicator("",getResources().getDrawable(R.drawable.baseline_search_24)); // thiết lập icon cho tab
+        spec2.setIndicator("",getResources().getDrawable(R.drawable.search_alt_2_svgrepo_com)); // thiết lập icon cho tab
         mytab.addTab(spec2); //thêm tab 1 vài tab chính
+        //tab3
+        spec3 =mytab.newTabSpec("t1"); // tạo mới tab
+        spec3.setContent(R.id.tab3); // tham chiếu id của tab1
+        spec3.setIndicator("",getResources().getDrawable(R.drawable.library_svgrepo_com__2_)); // thiết lập icon cho tab
+        mytab.addTab(spec3); //thêm tab 1 vài tab chính
+        //tab4
+        spec4 =mytab.newTabSpec("t1"); // tạo mới tab
+        spec4.setContent(R.id.tab4); // tham chiếu id của tab1
+        spec4.setIndicator("",getResources().getDrawable(R.drawable.spotify_162_svgrepo_com)); // thiết lập icon cho tab
+        mytab.addTab(spec4); //thêm tab 1 vài tab chính
     }
 
 

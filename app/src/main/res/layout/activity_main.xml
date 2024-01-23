@@ -19,14 +19,16 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:background="#A19999"
-                android:backgroundTint="#B98F8787" />
+                android:backgroundTint="@color/black" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
 
                 <LinearLayout
                     android:id="@+id/tab1"
@@ -46,6 +48,23 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include layout="@layout/layout3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include layout="@layout/layout4"/>
+
+                </LinearLayout>
 
             </FrameLayout>
         </LinearLayout>
