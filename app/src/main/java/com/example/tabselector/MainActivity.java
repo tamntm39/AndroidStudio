@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
 int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.lulylyly, R.drawable.mck, R.drawable.minne};
     String name[]={"Vì anh đâu có biết","Đông kiếm em","Lạ Lùng","Những lời hứa bỏ quên","Lời yêu em","Đợi"};
     String who[]={"Vũ.", "HIEUTHUHAI", "Low G", "LyLy", "MCK", "Min"};
-    Button btn1,btn2,btn3,btn4,btntong;
+    Button btn1,btn2,btn3,btn4;
     TabHost mytab;
     SearchView timkiem;
-    TextView tieude,tieude1,tieude2;
-    RelativeLayout list, list1;
-    ImageView hd,mck,min,wren,vu,tlink,hd1,mck1,min1,wren1,vu1,tlink1;
+    TextView tieude,tieude1,tieude2,tieude3;
+    RelativeLayout list, list1,list3;
+    ImageView hd,mck,min,wren,vu,tlink,hd1,mck1,min1,wren1,vu1,tlink1,mienphi1,mienphi2,mienphi3,mienphi4;
 
 
     //Khaibao listview
@@ -115,6 +115,8 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
         hd1.setImageResource(R.drawable.hoangdung);
 
         tieude2=findViewById(R.id.tieude2);
+
+        tieude3=findViewById(R.id.tieude3);
 
         //vử lí tabhosst
         mytab=findViewById(R.id.mytab);
