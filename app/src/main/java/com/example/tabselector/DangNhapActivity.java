@@ -8,25 +8,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class DangKyActivity2 extends AppCompatActivity {
+public class DangNhapActivity extends AppCompatActivity {
 
-     EditText editTextUsername;
-     EditText editTextPassword;
-     Button buttonSignUp;
+    EditText editTextUsername;
+    EditText editTextPassword;
+    Button buttonSignIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dang_ky2);
+        setContentView(R.layout.activity_dang_nhap);
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
-        buttonSignUp = findViewById(R.id.buttonSignUp);
+        buttonSignIn = findViewById(R.id.buttonSignIn);
 
-        buttonSignUp.setOnClickListener(new View.OnClickListener() {
+        buttonSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
-                Intent intent = new Intent(DangKyActivity2.this, DangNhapActivity.class);
+                Intent intent = new Intent(DangNhapActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -5,9 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/anh_nen_spo"
-    tools:context=".DangKyActivity2">
+    android:gravity="center"
+    android:background="@drawable/anh_dang_nhap"
+    tools:context=".DangNhapActivity">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/spotify_162_svgrepo_com"/>
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -27,10 +32,11 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/buttonSignUp"
+        android:id="@+id/buttonSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:backgroundTint="#65D569"
-        android:text="Sign Up" />
+        android:text="Sign In" />
+
 </LinearLayout>
