@@ -4,6 +4,7 @@ public class Item {
     private int image;
     private String name;
     private String who;
+
     //========================================================
 //định nghĩa đối tưởng
     public Item(int image, String name, String who) {

@@ -2,6 +2,7 @@ package com.example.tabselector;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,8 +24,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-//    EditText edtA,edtB;
-int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.lulylyly, R.drawable.mck, R.drawable.minne};
+    //    EditText edtA,edtB;
+    int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.lulylyly, R.drawable.mck, R.drawable.minne};
     String name[]={"Vì anh đâu có biết","Đông kiếm em","Lạ Lùng","Những lời hứa bỏ quên","Lời yêu em","Đợi"};
     String who[]={"Vũ.", "HIEUTHUHAI", "Low G", "LyLy", "MCK", "Min"};
     Button btn1,btn2,btn3,btn4;
@@ -38,19 +39,38 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
     //Khaibao listview
     GridView gv;
     ArrayList<Item> mylist;
-    ArrayList<String> mylist1;
     ArrayAdapter<Item> myadapter;
-    ArrayAdapter<String> myadapter1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //tạo mới mạng chính và add 3 mảng
+        mylist= new ArrayList<>();
+        for(int i =0;i<name.length;i++)
+        {
+            mylist.add(new Item(image[i],name[i],who[i]));
+        }
+        myadapter=new MyArrayAdapter(MainActivity.this,R.layout.layout_item,mylist);
+        gv=findViewById(R.id.gv);
+        gv.setAdapter(myadapter);
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+                //Khai báo Intent
+                Intent myintent=new Intent(MainActivity.this, SubActivity.class);
+                myintent.putExtra("image",image[i]);
+                myintent.putExtra("name",name[i]);
+                myintent.putExtra("who",who[i]);
+                startActivity(myintent);
+            }
+        });
         addControl();
         addEvent();
     }
 
     private void addEvent() {
-       timkiem=findViewById(R.id.timkiem);
+        timkiem=findViewById(R.id.timkiem);
     }
 
     private void addControl() {
@@ -61,36 +81,18 @@ int image[]={R.drawable.vu, R.drawable.hiuthu2, R.drawable.lowg, R.drawable.luly
         btn3=findViewById(R.id.btn3);
 
         btn4=findViewById(R.id.btn4);
-        //xử lí listview
-        gv=findViewById(R.id.gv);
-        mylist= new ArrayList<>();
-        for(int i =0;i<name.length;i++)
-        {
-            mylist.add(new Item(image[i],name[i],who[i]));
-        }
-        myadapter = new MyArrayAdapter(MainActivity.this,R.layout.layout_item,mylist);
-        gv=findViewById(R.id.gv);
-        gv.setAdapter(myadapter);
-//        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
-//                //Khai báo Intent
-//                Intent myintent=new Intent(MainActivity.this, SubActivity.class);
-//                myintent.putExtra("image",image[i]);
-//                myintent.putExtra("name",name[i]);
-//                myintent.putExtra("who",who[i]);
-//                startActivity(myintent);
-//            }
+
+
         tieude=findViewById(R.id.tieude);
         tieude1=findViewById(R.id.tieude1);
         list=findViewById(R.id.list);
-         vu = findViewById(R.id.vu);
-         tlink = findViewById(R.id.tlink);
-         wren = findViewById(R.id.wren);
-         min = findViewById(R.id.min);
-         mck = findViewById(R.id.mck);
-         hd = findViewById(R.id.hd);
-         //list1
+        vu = findViewById(R.id.vu);
+        tlink = findViewById(R.id.tlink);
+        wren = findViewById(R.id.wren);
+        min = findViewById(R.id.min);
+        mck = findViewById(R.id.mck);
+        hd = findViewById(R.id.hd);
+        //list1
         tieude1=findViewById(R.id.tieude1);
         list1=findViewById(R.id.list1);
         chill = findViewById(R.id.chill);

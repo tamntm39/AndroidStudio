@@ -1,9 +1,9 @@
-package com.example.lab5;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.tabselector;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DetailActivity extends AppCompatActivity {
     TextView tvDetailC;
