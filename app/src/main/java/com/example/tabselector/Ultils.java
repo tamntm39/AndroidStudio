@@ -22,17 +22,17 @@ public class Ultils {
         return null;
 
     }
-    public static void LoadData(ArrayList<CaSi> lstUser)
+    public static void LoadData(ArrayList<CaSi> lstCaSi)
     {
-        lstUser=new ArrayList<>();
-        lstUser.add(new CaSi("1","Lạ lùng","lalung.jpg"));
-        lstUser.add(new CaSi("2","Chuyện những người yêu xa","cngyeuxa.jpg"));
-        lstUser.add(new CaSi("3","Sau lời khước từ","sauloikhuoctu.jpg"));
-        lstUser.add(new CaSi("4","Lời yêu ngày ấy","loihua.jpg"));
-        lstUser.add(new CaSi("5","Lời yêu em","loiyeuem.jpg"));
-        lstUser.add(new CaSi("6","Đông kiếm em","dongkiemem.jpg"));
-        lstUser.add(new CaSi("7","Những lời hứa chưa quên","loihua.jpg"));
-        lstUser.add(new CaSi("8","Tại vì sao","taivisao.jpg"));
+        lstCaSi=new ArrayList<>();
+        lstCaSi.add(new CaSi("1","Vì anh đâu có biết","anhdouco.jpg","1000000"));
+        lstCaSi.add(new CaSi("2","Hư không","hukhong.jpg","23343545"));
+        lstCaSi.add(new CaSi("3","Sau lời khước từ","sauloikhuoctu.jpg","23343545"));
+        lstCaSi.add(new CaSi("4","Đánh đổi","danhdoi.jpg","23343545"));
+        lstCaSi.add(new CaSi("5","Bởi vì khi yêu","boivikhiyeu.jpg","23343545"));
+        lstCaSi.add(new CaSi("6","Tại vì sao","taivisao.jpg","23343545"));
+        lstCaSi.add(new CaSi("7","Những lời hứa chưa quên","loihua.jpg","23343545"));
+        lstCaSi.add(new CaSi("8","Đông kiếm em","dongkiemem.jpg","23343545"));
 
     }
 }

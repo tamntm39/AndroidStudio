@@ -4,11 +4,13 @@ public class CaSi {
     String id;
     String name;
     String avatar;
+    String viewbh;
 
-    public CaSi(String id, String name, String avatar) {
+    public CaSi(String id, String name, String avatar, String viewbh) {
         this.id = id;
         this.name = name;
         this.avatar = avatar;
+        this.viewbh= String.valueOf(viewbh);
     }
 
     public String getId() {
@@ -33,5 +35,13 @@ public class CaSi {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    public String getViewbh() {
+        return viewbh;
+    }
+
+    public void setViewbh(String viewbh) {
+        this.viewbh = viewbh;
     }
 }

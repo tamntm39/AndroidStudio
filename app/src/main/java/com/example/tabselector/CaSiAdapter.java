@@ -13,12 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CaSiAdapter extends RecyclerView.Adapter <CaSiAdapter.UserViewHolder> {
-    ArrayList<CaSi> lstUser;
+    ArrayList<CaSi> lstCasi;
     Context context;
     UserCallback userCallback;
 
     public CaSiAdapter(ArrayList<CaSi> lstUser,UserCallback userCallback) {
-        this.lstUser = lstUser;
+        this.lstCasi = lstUser;
         this.userCallback=userCallback;
     }
 
@@ -35,9 +35,10 @@ public class CaSiAdapter extends RecyclerView.Adapter <CaSiAdapter.UserViewHolde
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
-        CaSi item = lstUser.get(position);
+        CaSi item = lstCasi.get(position);
         holder.imAvarta.setImageBitmap(Ultils.convertToBitmapFromAssets(context,item.getAvatar()));
         holder.tvName.setText(item.getName());
+        holder.viewBH.setText(item.getViewbh());
 
         holder.itemView.setOnClickListener(view->userCallback.onItemClick(item.getId()));
 
@@ -46,7 +47,7 @@ public class CaSiAdapter extends RecyclerView.Adapter <CaSiAdapter.UserViewHolde
 
     @Override
     public int getItemCount() {
-        return lstUser.size();
+        return lstCasi.size();
     }
 
     static class UserViewHolder extends RecyclerView.ViewHolder{

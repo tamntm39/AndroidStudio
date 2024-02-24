@@ -57,13 +57,13 @@ public class SubActivity extends AppCompatActivity implements CaSiAdapter.UserCa
     void LoadData()
     {
         lstCaSi=new ArrayList<>();
-        lstCaSi.add(new CaSi("1","Vì anh đâu có biết","anhdouco.jpg"));
-        lstCaSi.add(new CaSi("2","Hư không","hukhong.jpg"));
-        lstCaSi.add(new CaSi("3","Sau lời khước từ","sauloikhuoctu.jpg"));
-        lstCaSi.add(new CaSi("4","Đánh đổi","danhdoi.jpg"));
-        lstCaSi.add(new CaSi("5","Bởi vì khi yêu","boivikhiyeu.jpg"));
-        lstCaSi.add(new CaSi("6","Tại vì sao","taivisao.jpg"));
-        lstCaSi.add(new CaSi("7","Những lời hứa chưa quên","loihua.jpg"));
-        lstCaSi.add(new CaSi("8","Đông kiếm em","dongkiemem.jpg"));
+        lstCaSi.add(new CaSi("1","Vì anh đâu có biết","anhdouco.jpg","1000000"));
+        lstCaSi.add(new CaSi("2","Hư không","hukhong.jpg","23343545"));
+        lstCaSi.add(new CaSi("3","Sau lời khước từ","sauloikhuoctu.jpg","23343545"));
+        lstCaSi.add(new CaSi("4","Đánh đổi","danhdoi.jpg","23343545"));
+        lstCaSi.add(new CaSi("5","Bởi vì khi yêu","boivikhiyeu.jpg","23343545"));
+        lstCaSi.add(new CaSi("6","Tại vì sao","taivisao.jpg","23343545"));
+        lstCaSi.add(new CaSi("7","Những lời hứa chưa quên","loihua.jpg","23343545"));
+        lstCaSi.add(new CaSi("8","Đông kiếm em","dongkiemem.jpg","23343545"));
     }
 }
